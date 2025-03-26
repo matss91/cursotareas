@@ -1,6 +1,6 @@
 import React from "react";
 import { UseForm } from "../hooks/UseForm";
-
+import"../css/agregar.css"
 import axios from"axios"
 
 export const CrearTarea = () => {
@@ -32,7 +32,7 @@ export const CrearTarea = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <a href="/proyectos">Ir a proyectos</a>
+      <a className="proyectos" href="/proyectos">Ir a proyectos</a>
       <input
         type="text"
         name="title"

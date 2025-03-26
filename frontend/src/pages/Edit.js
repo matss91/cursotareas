@@ -1,4 +1,4 @@
-
+import"../css/edit.css"
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import { UseForm } from "../hooks/UseForm"; // Importa el hook correctamente
@@ -37,7 +37,7 @@ export const Edit = () => {
   return (
     <>
     <form onSubmit={handleSubmit}>
-      <Link to="/proyectos">Ir a proyectos</Link>
+    <a className="proyectos" href="/proyectos">ir a proyectos</a>
       <input
         type="text"
         name="title"
@@ -57,7 +57,7 @@ export const Edit = () => {
       </button>
       <button type="submit">Enviar</button>
     </form>
-   < a href="/proyectos">ir a proyectos</a>
+   
     </>
   );
 };

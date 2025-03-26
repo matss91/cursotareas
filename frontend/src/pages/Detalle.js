@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useApi } from '../context/ApiContext';
-
+import"../css/detalle.css"
 export const Detalle = () => {
     const { data, setData } = useApi();
     const [state, setstate] = useState({});
@@ -33,10 +33,11 @@ export const Detalle = () => {
    
 
     return (
-        <div>
-            
-            <h2>{state.title}</h2>
-            <p>{state.description}</p>
+        <div className='principal'>
+            <h2>titulo</h2>
+            <h4>{state.title}</h4>
+            <h2>descripcion</h2>
+            <h4>{state.description}</h4>
             <a href="/proyectos">Ir a proyectos</a>
         </div>
     );

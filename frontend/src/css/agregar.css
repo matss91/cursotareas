@@ -1,0 +1,11 @@
+.proyectos{
+   text-decoration:none;
+   display:block;
+   margin-bottom: 20px;
+   height:20px;
+   width:120px;
+   color:rgb(26, 7, 7);
+   background-color: rgb(180, 180, 207);
+   border-radius: 5px;
+   text-align: center;
+}
